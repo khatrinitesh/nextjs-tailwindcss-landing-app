@@ -5,12 +5,12 @@ import React from 'react'
 const SocialMedia = () => {
   return (
     <>
-     <ul>
+     <ul className="flex flex-col md:flex-row gap-3">
         {socialIcons.map((val,index) => {
             return(
-                <li key={index}>
-                    <Link href={val.url} target="_blank" className="text-fsh14">
-                        {val.icon} - {val.name}
+                <li key={index} className="flex items-center ">
+                    <Link href={val.url} target="_blank" className="text-fs16 flex items-center ">
+                        <span className="me-2">{val.icon}</span> {val.name}
                     </Link>
                 </li>
             )

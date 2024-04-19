@@ -26,7 +26,7 @@ const ThemeToggle = () => {
 
   return (
     <button
-      className={`${darkMode ? 'bg-white' : 'bg-black'} dark-mode-togglex p-0 flex items-center justify-center w-[50px] h-[50px] border-4 border-gray-700 rounded cursor-pointer focus:outline-none fixed top-[20px] right-[30px] z-[999]`}
+      className={`${darkMode ? 'bg-white' : 'bg-black'} dark-mode-togglex p-0 flex items-center justify-center w-[50px] h-[50px] border-4 border-gray-700 rounded cursor-pointer focus:outline-none fixed top-[50%] right-[30px] z-[999] translate-y-[-50%]`}
       type="button"
       onClick={toggleTheme}
     >
